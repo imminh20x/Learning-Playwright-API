@@ -7,6 +7,7 @@ test('should be able to delete', async ({request})=>{
     // send DELETE request
     const response = await request.delete(url)
     const status = response.status()
+    
     // stdout
     console.log(status)
 
