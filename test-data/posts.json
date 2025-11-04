@@ -1,0 +1,21 @@
+[
+    {
+        "title": "foo",
+        "body": "bar",
+        "userId": 1,
+        "expectedStatus": 201
+    },
+    {
+        "title": "test post",
+        "body": "test content",
+        "userId": 2,
+        "expectedStatus": 201
+    },
+    {
+        "title": "sample",
+        "body": "sample body text",
+        "userId": 3,
+        "expectedStatus": 201
+    }
+]
+

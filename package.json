@@ -1,6 +1,7 @@
 {
   "name": "1G",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
