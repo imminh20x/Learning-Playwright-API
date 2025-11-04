@@ -1,13 +1,15 @@
 /*
 Create a CRUD flow
 */
-
+import dotenv from 'dotenv'
 import { test } from "@playwright/test";
+
+dotenv.config()
 
 test('should be able to perform CRUD on post type', async ({ request }) => {
 
     // construct data
-    const baseUrl = 'https://jsonplaceholder.typicode.com'
+    const baseUrl = process.env.BASE_URL
     const headers = { 'Content-type': 'application/json; charset=UTF-8' }
 
     const postContent = {

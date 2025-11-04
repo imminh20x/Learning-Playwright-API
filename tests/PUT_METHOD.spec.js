@@ -1,6 +1,6 @@
-const { test, expect } = require("@playwright/test");
+import { test, expect } from "@playwright/test"
 
-test('should be able to create a new put', async ({request}) => {
+test('should be able to create a new put', async ({ request }) => {
 
     // construct data
     const url = 'https://jsonplaceholder.typicode.com/posts/1'
@@ -19,7 +19,7 @@ test('should be able to create a new put', async ({request}) => {
     }
 
     // send PUT request
-    const response = await(request.put(url, options))
+    const response = await (request.put(url, options))
     const rsBody = await response.json()
     const status = response.status()
 
@@ -29,7 +29,7 @@ test('should be able to create a new put', async ({request}) => {
 
     // verification
     expect(status).toBe(200)
-    const {id, title, body, userId} = rsBody
+    const { id, title, body, userId } = rsBody
     expect(id).toBe(putContent.id)
     expect(id).toBe(putContent.id)
     expect(title).toBe(putContent.title)
